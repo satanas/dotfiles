@@ -7,11 +7,12 @@ colorscheme vibrantink
 " Formatting (some of these are for coding in C and C++)
 set modeline
 set ls=2  " Always show status bar
-set ts=2  " Tabs are 2 spaces
+set ts=4  " Tabs are 2 spaces
 set bs=2  " Backspace over everything in insert mode
-set shiftwidth=2  " Tabs under smart indent
+set shiftwidth=4  " Tabs under smart indent
+set softtabstop=4
 set autoindent
-set smarttab
+"set smarttab
 set expandtab
 set nowrap  " Line wrapping off
 set showmatch  " Show matching brackets.
@@ -22,6 +23,7 @@ set listchars=tab:→-,trail:·
 set nocompatible          " We're running Vim, not Vi!
 syntax on
 filetype plugin indent on " Enable filetype-specific indenting and plugins
+autocmd FileType ruby setlocal ts=2 shiftwidth=2 softtabstop=2
 autocmd FileType python setlocal ts=4 shiftwidth=4 softtabstop=4
 
 " Shorcuts for tabs

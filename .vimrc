@@ -24,11 +24,11 @@ set nocompatible          " We're running Vim, not Vi!
 syntax on
 filetype plugin indent on " Enable filetype-specific indenting and plugins
 autocmd FileType ruby setlocal ts=2 shiftwidth=2 softtabstop=2
+autocmd FileType javascript setlocal ts=2 shiftwidth=2 softtabstop=2
 autocmd FileType python setlocal ts=4 shiftwidth=4 softtabstop=4
 
 " Shorcuts for tabs
 :nmap <C-tab> :tabnext
 :nmap <C-S-tab> :tabprevious
 :nmap <C-t> :tabnew
-:nmap <C-w> :tabclose
 

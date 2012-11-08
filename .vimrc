@@ -21,6 +21,7 @@ set mat=5  " Bracket blinking.
 set list
 set listchars=tab:→-,trail:·
 set nocompatible          " We're running Vim, not Vi!
+set ic  " Ignore case when searching
 syntax on
 filetype plugin indent on " Enable filetype-specific indenting and plugins
 autocmd FileType ruby setlocal ts=2 shiftwidth=2 softtabstop=2

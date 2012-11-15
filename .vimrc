@@ -4,7 +4,7 @@ filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
-set statusline=%t%m%r%h%w\ [POS=%04l,%04v]\ [%p%%]\ [LEN=%L]
+"set statusline=%t%m%r%h%w\ [POS=%04l,%04v]\ [%p%%]\ [LEN=%L]
 set cursorline
 set number
 set numberwidth=5
@@ -27,6 +27,7 @@ set mat=5  " Bracket blinking.
 set list
 set listchars=tab:→-,trail:·
 set ic  " Ignore case when searching
+set scrolloff=3 " when scrolling, keep cursor 3 lines away from screen border
 syntax on
 filetype plugin indent on " Enable filetype-specific indenting and plugins
 autocmd FileType ruby setlocal ts=2 shiftwidth=2 softtabstop=2
@@ -39,4 +40,5 @@ autocmd FileType python setlocal ts=4 shiftwidth=4 softtabstop=4
 :nmap <C-t> :tabnew
 
 Bundle 'gmarik/vundle'
-Bundle 'git://github.com/Lokaltog/vim-powerline.git'
+Bundle 'Lokaltog/vim-powerline'
+Bundle 'scrooloose/nerdtree'

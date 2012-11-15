@@ -38,7 +38,10 @@ autocmd FileType python setlocal ts=4 shiftwidth=4 softtabstop=4
 :nmap <C-tab> :tabnext
 :nmap <C-S-tab> :tabprevious
 :nmap <C-t> :tabnew
+map <F3> :NERDTreeToggle<CR>
 
 Bundle 'gmarik/vundle'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'scrooloose/nerdtree'
+" Yank history navigation
+Bundle 'YankRing.vim'

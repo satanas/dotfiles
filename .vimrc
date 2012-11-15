@@ -1,3 +1,9 @@
+set nocompatible          " We're running Vim, not Vi!
+filetype off
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
 set statusline=%t%m%r%h%w\ [POS=%04l,%04v]\ [%p%%]\ [LEN=%L]
 set cursorline
 set number
@@ -20,7 +26,6 @@ set hlsearch  " Highlight searches
 set mat=5  " Bracket blinking.
 set list
 set listchars=tab:→-,trail:·
-set nocompatible          " We're running Vim, not Vi!
 set ic  " Ignore case when searching
 syntax on
 filetype plugin indent on " Enable filetype-specific indenting and plugins
@@ -33,3 +38,5 @@ autocmd FileType python setlocal ts=4 shiftwidth=4 softtabstop=4
 :nmap <C-S-tab> :tabprevious
 :nmap <C-t> :tabnew
 
+Bundle 'gmarik/vundle'
+Bundle 'git://github.com/Lokaltog/vim-powerline.git'

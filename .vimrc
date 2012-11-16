@@ -17,8 +17,10 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'scrooloose/nerdtree'
-" Yank history navigation
+Bundle 'tpope/vim-surround'
+
 Bundle 'YankRing.vim'
+Bundle 'AutoComplPop'
 
 " Installing plugins the first time
 if iCanHazVundle == 0

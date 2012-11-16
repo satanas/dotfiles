@@ -18,6 +18,7 @@ Bundle 'gmarik/vundle'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'scrooloose/nerdtree'
 Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-rails'
 
 Bundle 'YankRing.vim'
 Bundle 'AutoComplPop'

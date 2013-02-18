@@ -1,3 +1,4 @@
+set encoding=utf-8
 set nocompatible          " We're running Vim, not Vi!
 filetype off
 
@@ -57,6 +58,7 @@ set list
 set listchars=tab:→-,trail:·
 set ic  " Ignore case when searching
 set scrolloff=3 " when scrolling, keep cursor 3 lines away from screen border
+set mouse=a " enable mouse scrolling in OSX
 syntax on
 filetype plugin indent on " Enable filetype-specific indenting and plugins
 autocmd FileType ruby setlocal ts=2 shiftwidth=2 softtabstop=2

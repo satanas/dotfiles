@@ -1,8 +1,34 @@
 set nocompatible          " We're running Vim, not Vi!
 filetype off
 
+let iCanHazVundle=1
+let vundle_readme=expand('~/.vim/bundle/vundle/README.md')
+if !filereadable(vundle_readme)
+    echo "Installing Vundle..."
+    echo ""
+    silent !mkdir -p ~/.vim/bundle
+    silent !git clone https://github.com/gmarik/vundle ~/.vim/bundle/vundle
+    let iCanHazVundle=0
+endif
+
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
+
+Bundle 'gmarik/vundle'
+Bundle 'Lokaltog/vim-powerline'
+Bundle 'scrooloose/nerdtree'
+Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-rails'
+
+Bundle 'YankRing.vim'
+Bundle 'AutoComplPop'
+
+" Installing plugins the first time
+if iCanHazVundle == 0
+    echo "Installing Bundles, please ignore key map error messages"
+    echo ""
+    :BundleInstall
+endif
 
 "set statusline=%t%m%r%h%w\ [POS=%04l,%04v]\ [%p%%]\ [LEN=%L]
 set cursorline
@@ -41,9 +67,3 @@ autocmd FileType php setlocal noexpandtab tabstop=4
 :nmap <C-S-tab> :tabprevious
 :nmap <C-t> :tabnew
 map <F3> :NERDTreeToggle<CR>
-
-Bundle 'gmarik/vundle'
-Bundle 'Lokaltog/vim-powerline'
-Bundle 'scrooloose/nerdtree'
-" Yank history navigation
-Bundle 'YankRing.vim'

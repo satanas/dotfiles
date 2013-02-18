@@ -8,7 +8,9 @@ call vundle#rc()
 set cursorline
 set number
 set numberwidth=5
-colorscheme vibrantink
+set background=dark
+colorscheme solarized
+let g:solarized_termcolors=256
 
 " Formatting (some of these are for coding in C and C++)
 set modeline
@@ -32,7 +34,7 @@ syntax on
 filetype plugin indent on " Enable filetype-specific indenting and plugins
 autocmd FileType ruby setlocal ts=2 shiftwidth=2 softtabstop=2
 autocmd FileType javascript setlocal ts=2 shiftwidth=2 softtabstop=2
-autocmd FileType python setlocal ts=4 shiftwidth=4 softtabstop=4
+autocmd FileType php setlocal noexpandtab tabstop=4
 
 " Shorcuts for tabs
 :nmap <C-tab> :tabnext

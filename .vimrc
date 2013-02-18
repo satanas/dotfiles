@@ -37,6 +37,7 @@ set numberwidth=5
 set background=dark
 colorscheme solarized
 let g:solarized_termcolors=256
+let g:Powerline_symbols = 'fancy'
 
 " Formatting (some of these are for coding in C and C++)
 set modeline

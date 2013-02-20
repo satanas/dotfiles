@@ -52,13 +52,15 @@ set autoindent
 set expandtab
 set nowrap  " Line wrapping off
 set showmatch  " Show matching brackets.
+set incsearch  " Incremental searches
+set ignorecase " Ignore case in searches
+set smartcase " Ignore case except when you type upper case letters
 set hlsearch  " Highlight searches
 set mat=5  " Bracket blinking.
 set list
 set listchars=tab:→-,trail:·
-set ic  " Ignore case when searching
 set scrolloff=3 " when scrolling, keep cursor 3 lines away from screen border
-set mouse=a " enable mouse scrolling in OSX
+"set mouse=a " enable mouse scrolling in OSX
 syntax on
 filetype plugin indent on " Enable filetype-specific indenting and plugins
 autocmd FileType ruby setlocal ts=2 shiftwidth=2 softtabstop=2

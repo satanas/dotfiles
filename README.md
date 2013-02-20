@@ -11,6 +11,7 @@ To install it copy the files to your .vim folder. I prefer to clone the repo to 
 ```
 git clone git://github.com/satanas/vim-config.git my_preferred_folder
 ln -ls my_preferred_folder/.vim ~/.vim
+ln -ls my_preferred_folder/.vimrc ~/.vimrc
 ```
 
 After that open vim and execute:

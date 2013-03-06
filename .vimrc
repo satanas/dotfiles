@@ -20,6 +20,7 @@ Bundle 'Lokaltog/vim-powerline'
 Bundle 'scrooloose/nerdtree'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-rails'
+Bundle 'orenhe/pylint.vim'
 
 Bundle 'YankRing.vim'
 Bundle 'AutoComplPop'
@@ -66,6 +67,7 @@ filetype plugin indent on " Enable filetype-specific indenting and plugins
 autocmd FileType ruby setlocal ts=2 shiftwidth=2 softtabstop=2
 autocmd FileType javascript setlocal ts=2 shiftwidth=2 softtabstop=2
 autocmd FileType php setlocal noexpandtab tabstop=4
+autocmd FileType python compiler pylint
 
 " Shorcuts for tabs
 :nmap <C-tab> :tabnext

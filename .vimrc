@@ -62,6 +62,8 @@ set mat=5  " Bracket blinking.
 set list
 set listchars=tab:→-,trail:·
 set scrolloff=3 " when scrolling, keep cursor 3 lines away from screen border
+set colorcolumn=120
+"set noswapfile " disable swap - all buffers will be opened in memory
 "set mouse=a " enable mouse scrolling in OSX
 syntax on
 filetype plugin indent on " Enable filetype-specific indenting and plugins

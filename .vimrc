@@ -22,6 +22,7 @@ Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-rails'
 Bundle 'orenhe/pylint.vim'
 Bundle 'avakhov/vim-yaml'
+Bundle 'kien/ctrlp.vim'
 
 Bundle 'YankRing.vim'
 Bundle 'AutoComplPop'
@@ -76,4 +77,5 @@ autocmd FileType php setlocal noexpandtab tabstop=4
 :nmap <C-tab> :tabnext
 :nmap <C-S-tab> :tabprevious
 :nmap <C-t> :tabnew
+:nmap <C-o> :CtrlP<CR>
 map <F3> :NERDTreeToggle<CR>

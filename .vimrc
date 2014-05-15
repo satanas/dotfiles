@@ -25,9 +25,9 @@ Bundle 'avakhov/vim-yaml'
 Bundle 'kien/ctrlp.vim'
 "Bundle 'aklt/plantuml-syntax'
 "Bundle 'Valloric/YouCompleteMe'
-
 Bundle 'YankRing.vim'
 Bundle 'AutoComplPop'
+Bundle 'satanas/rename.vim'
 
 " Installing plugins the first time
 if iCanHazVundle == 0
@@ -71,13 +71,13 @@ set colorcolumn=120
 
 syntax on
 filetype plugin indent on " Enable filetype-specific indenting and plugins
-autocmd FileType python setlocal ts=4 shiftwidth=4 softtabstop=4 foldmethod=indent foldlevel=99
-autocmd FileType ruby setlocal ts=2 shiftwidth=2 softtabstop=2 foldmethod=indent
-autocmd FileType javascript setlocal ts=2 shiftwidth=2 softtabstop=2 foldmethod=syntax
-autocmd FileType css setlocal ts=2 shiftwidth=2 softtabstop=2 foldmethod=syntax
-autocmd FileType php setlocal ts=4 softtabstop=4 foldmethod=syntax
-autocmd FileType cpp setlocal ts=4 softtabstop=4 foldmethod=syntax
-autocmd FileType hpp setlocal ts=4 softtabstop=4 foldmethod=syntax
+autocmd FileType python setlocal ts=4 shiftwidth=4 softtabstop=4 "foldmethod=indent foldlevel=99
+autocmd FileType ruby setlocal ts=2 shiftwidth=2 softtabstop=2 "foldmethod=indent
+autocmd FileType javascript setlocal ts=2 shiftwidth=2 softtabstop=2 "foldmethod=syntax
+autocmd FileType css setlocal ts=2 shiftwidth=2 softtabstop=2 "foldmethod=syntax
+autocmd FileType php setlocal ts=4 softtabstop=4 "foldmethod=syntax
+autocmd FileType cpp setlocal ts=4 softtabstop=4 "foldmethod=syntax
+autocmd FileType hpp setlocal ts=4 softtabstop=4 "foldmethod=syntax
 "autocmd FileType python compiler pylint
 
 " Shorcuts for tabs

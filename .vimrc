@@ -28,6 +28,7 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'YankRing.vim'
 Bundle 'AutoComplPop'
 Bundle 'satanas/rename.vim'
+Bundle 'derekwyatt/vim-scala'
 
 " Installing plugins the first time
 if iCanHazVundle == 0
@@ -78,6 +79,7 @@ autocmd FileType css setlocal ts=2 shiftwidth=2 softtabstop=2 "foldmethod=syntax
 autocmd FileType php setlocal ts=4 softtabstop=4 "foldmethod=syntax
 autocmd FileType cpp setlocal ts=4 softtabstop=4 "foldmethod=syntax
 autocmd FileType hpp setlocal ts=4 softtabstop=4 "foldmethod=syntax
+autocmd FileType scala setlocal ts=2 shiftwidth=2 softtabstop=2 "foldmethod=indent
 "autocmd FileType python compiler pylint
 
 " Shorcuts for tabs

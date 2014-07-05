@@ -29,6 +29,10 @@ Bundle 'YankRing.vim'
 Bundle 'AutoComplPop'
 Bundle 'satanas/rename.vim'
 Bundle 'derekwyatt/vim-scala'
+Bundle 'jelera/vim-javascript-syntax'
+Bundle 'pangloss/vim-javascript'
+Bundle 'nathanaelkane/vim-indent-guides'
+
 
 " Installing plugins the first time
 if iCanHazVundle == 0

@@ -32,6 +32,7 @@ Bundle 'derekwyatt/vim-scala'
 Bundle 'jelera/vim-javascript-syntax'
 Bundle 'pangloss/vim-javascript'
 Bundle 'nathanaelkane/vim-indent-guides'
+Bundle 'scrooloose/syntastic'
 
 
 " Installing plugins the first time

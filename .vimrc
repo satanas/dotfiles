@@ -72,7 +72,7 @@ set list
 set listchars=tab:→-,trail:·
 set scrolloff=3 " when scrolling, keep cursor 3 lines away from screen border
 set colorcolumn=120
-"set noswapfile " disable swap - all buffers will be opened in memory
+set noswapfile " disable swap - all buffers will be opened in memory
 "set mouse=a " enable mouse scrolling in OSX
 
 syntax on
@@ -85,6 +85,7 @@ autocmd FileType php setlocal ts=4 softtabstop=4 "foldmethod=syntax
 autocmd FileType cpp setlocal ts=4 softtabstop=4 "foldmethod=syntax
 autocmd FileType hpp setlocal ts=4 softtabstop=4 "foldmethod=syntax
 autocmd FileType scala setlocal ts=2 shiftwidth=2 softtabstop=2 "foldmethod=indent
+autocmd FileType html setlocal ts=2 shiftwidth=2 softtabstop=2 "foldmethod=indent
 "autocmd FileType python compiler pylint
 
 " Shorcuts for tabs

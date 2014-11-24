@@ -18,16 +18,22 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'scrooloose/nerdtree'
-Bundle 'tpope/vim-surround'
+"Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-rails'
 Bundle 'orenhe/pylint.vim'
 Bundle 'avakhov/vim-yaml'
 Bundle 'kien/ctrlp.vim'
+"Bundle 'aklt/plantuml-syntax'
 "Bundle 'Valloric/YouCompleteMe'
-
 Bundle 'YankRing.vim'
 Bundle 'AutoComplPop'
 "Bundle 'pyflakes.vim'
+Bundle 'satanas/rename.vim'
+Bundle 'derekwyatt/vim-scala'
+Bundle 'jelera/vim-javascript-syntax'
+Bundle 'pangloss/vim-javascript'
+Bundle 'nathanaelkane/vim-indent-guides'
+Bundle 'scrooloose/syntastic'
 
 " Installing plugins the first time
 if iCanHazVundle == 0
@@ -66,19 +72,26 @@ set list
 set listchars=tab:→-,trail:·
 set scrolloff=3 " when scrolling, keep cursor 3 lines away from screen border
 set colorcolumn=120
-"set noswapfile " disable swap - all buffers will be opened in memory
+set noswapfile " disable swap - all buffers will be opened in memory
 "set mouse=a " enable mouse scrolling in OSX
+
 syntax on
 filetype plugin indent on " Enable filetype-specific indenting and plugins
-autocmd FileType ruby setlocal ts=2 shiftwidth=2 softtabstop=2
-autocmd FileType javascript setlocal ts=2 shiftwidth=2 softtabstop=2
-autocmd FileType php setlocal tabstop=4 softtabstop=4 shiftwidth=4
-autocmd FileType css setlocal ts=2 shiftwidth=2 softtabstop=2
+
+autocmd FileType python setlocal ts=4 shiftwidth=4 softtabstop=4 "foldmethod=indent foldlevel=99
+autocmd FileType ruby setlocal ts=2 shiftwidth=2 softtabstop=2 "foldmethod=indent
+autocmd FileType javascript setlocal ts=2 shiftwidth=2 softtabstop=2 "foldmethod=syntax
+autocmd FileType css setlocal ts=2 shiftwidth=2 softtabstop=2 "foldmethod=syntax
+autocmd FileType php setlocal ts=4 softtabstop=4 "foldmethod=syntax
+autocmd FileType cpp setlocal ts=4 softtabstop=4 "foldmethod=syntax
+autocmd FileType hpp setlocal ts=4 softtabstop=4 "foldmethod=syntax
+autocmd FileType scala setlocal ts=2 shiftwidth=2 softtabstop=2 "foldmethod=indent
+autocmd FileType html setlocal ts=2 shiftwidth=2 softtabstop=2 "foldmethod=indent
 "autocmd FileType python compiler pylint
 
 " Shorcuts for tabs
 :nmap <C-tab> :tabnext
 :nmap <C-S-tab> :tabprevious
-:nmap <C-t> :tabnew<CR>
+:nmap <C-t> :tabnew .<CR>
 :nmap <C-o> :CtrlP<CR>
 map <F3> :NERDTreeToggle<CR>

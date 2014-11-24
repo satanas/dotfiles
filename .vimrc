@@ -27,6 +27,7 @@ Bundle 'kien/ctrlp.vim'
 
 Bundle 'YankRing.vim'
 Bundle 'AutoComplPop'
+"Bundle 'pyflakes.vim'
 
 " Installing plugins the first time
 if iCanHazVundle == 0
@@ -71,7 +72,8 @@ syntax on
 filetype plugin indent on " Enable filetype-specific indenting and plugins
 autocmd FileType ruby setlocal ts=2 shiftwidth=2 softtabstop=2
 autocmd FileType javascript setlocal ts=2 shiftwidth=2 softtabstop=2
-autocmd FileType php setlocal noexpandtab tabstop=4
+autocmd FileType php setlocal tabstop=4 softtabstop=4 shiftwidth=4
+autocmd FileType css setlocal ts=2 shiftwidth=2 softtabstop=2
 "autocmd FileType python compiler pylint
 
 " Shorcuts for tabs

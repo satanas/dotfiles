@@ -1,6 +1,5 @@
-set encoding=utf-8
 set nocompatible          " We're running Vim, not Vi!
-filetype off
+set encoding=utf-8
 
 let iCanHazVundle=1
 let vundle_readme=expand('~/.vim/bundle/vundle/README.md')
@@ -34,6 +33,7 @@ Bundle 'jelera/vim-javascript-syntax'
 Bundle 'pangloss/vim-javascript'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'scrooloose/syntastic'
+Bundle 'kchmck/vim-coffee-script'
 
 " Installing plugins the first time
 if iCanHazVundle == 0
@@ -42,38 +42,45 @@ if iCanHazVundle == 0
     :BundleInstall
 endif
 
-"set statusline=%t%m%r%h%w\ [POS=%04l,%04v]\ [%p%%]\ [LEN=%L]
-set cursorline
-set number
-set numberwidth=5
 set background=dark
 colorscheme solarized
 let g:solarized_termcolors=256
 let g:Powerline_symbols = 'fancy'
 
-" Formatting (some of these are for coding in C and C++)
+" General
+set cursorline
+set number
+set numberwidth=5
+set colorcolumn=120
+set spell
+set history=100
+set showmatch  " Show matching brackets.
+set incsearch  " Incremental searches
+set ignorecase  " Ignore case in searches
+set smartcase  " Ignore case except when you type upper case letters
+set hlsearch  " Highlight searches
+set mat=5  " Bracket blinking.
+set list
+set listchars=tab:→-,trail:·
+set scrolljump=5  " Lines to scroll when cursor leaves screen
+set scrolloff=3  " when scrolling, keep cursor 3 lines away from screen border
+set noswapfile  " disable swap - all buffers will be opened in memory
+set mouse=a  " enable mouse scrolling in OSX
+
+" Formatting
+set autoindent
+set expandtab
+set nowrap  " Line wrapping off
 set modeline
 set ls=2  " Always show status bar
 set ts=4  " Tabs are 2 spaces
 set bs=2  " Backspace over everything in insert mode
 set shiftwidth=4  " Tabs under smart indent
 set softtabstop=4
-set autoindent
-"set smarttab
-set expandtab
-set nowrap  " Line wrapping off
-set showmatch  " Show matching brackets.
-set incsearch  " Incremental searches
-set ignorecase " Ignore case in searches
-set smartcase " Ignore case except when you type upper case letters
-set hlsearch  " Highlight searches
-set mat=5  " Bracket blinking.
-set list
-set listchars=tab:→-,trail:·
-set scrolloff=3 " when scrolling, keep cursor 3 lines away from screen border
-set colorcolumn=120
-set noswapfile " disable swap - all buffers will be opened in memory
-"set mouse=a " enable mouse scrolling in OSX
+set pastetoggle=<F12>  " pastetoggle (sane indentation on pastes)
+
+" Clipboard
+set clipboard=unnamed
 
 syntax on
 filetype plugin indent on " Enable filetype-specific indenting and plugins

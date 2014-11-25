@@ -27,13 +27,13 @@ Bundle 'kien/ctrlp.vim'
 "Bundle 'Valloric/YouCompleteMe'
 Bundle 'YankRing.vim'
 Bundle 'AutoComplPop'
+"Bundle 'pyflakes.vim'
 Bundle 'satanas/rename.vim'
 Bundle 'derekwyatt/vim-scala'
 Bundle 'jelera/vim-javascript-syntax'
 Bundle 'pangloss/vim-javascript'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'scrooloose/syntastic'
-
 
 " Installing plugins the first time
 if iCanHazVundle == 0
@@ -77,6 +77,7 @@ set noswapfile " disable swap - all buffers will be opened in memory
 
 syntax on
 filetype plugin indent on " Enable filetype-specific indenting and plugins
+
 autocmd FileType python setlocal ts=4 shiftwidth=4 softtabstop=4 "foldmethod=indent foldlevel=99
 autocmd FileType ruby setlocal ts=2 shiftwidth=2 softtabstop=2 "foldmethod=indent
 autocmd FileType javascript setlocal ts=2 shiftwidth=2 softtabstop=2 "foldmethod=syntax

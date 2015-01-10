@@ -15,18 +15,14 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 Bundle 'gmarik/vundle'
-Bundle 'Lokaltog/vim-powerline'
+Bundle 'bling/vim-airline'
 Bundle 'scrooloose/nerdtree'
-"Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-rails'
 Bundle 'orenhe/pylint.vim'
 Bundle 'avakhov/vim-yaml'
 Bundle 'kien/ctrlp.vim'
-"Bundle 'aklt/plantuml-syntax'
-"Bundle 'Valloric/YouCompleteMe'
 Bundle 'YankRing.vim'
 Bundle 'AutoComplPop'
-"Bundle 'pyflakes.vim'
 Bundle 'satanas/rename.vim'
 Bundle 'derekwyatt/vim-scala'
 Bundle 'jelera/vim-javascript-syntax'
@@ -34,6 +30,7 @@ Bundle 'pangloss/vim-javascript'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'scrooloose/syntastic'
 Bundle 'kchmck/vim-coffee-script'
+Bundle 'elzr/vim-json'
 
 " Installing plugins the first time
 if iCanHazVundle == 0
@@ -41,11 +38,6 @@ if iCanHazVundle == 0
     echo ""
     :BundleInstall
 endif
-
-set background=dark
-colorscheme solarized
-let g:solarized_termcolors=256
-let g:Powerline_symbols = 'fancy'
 
 " General
 set cursorline
@@ -85,6 +77,14 @@ set clipboard=unnamed
 syntax on
 filetype plugin indent on " Enable filetype-specific indenting and plugins
 
+set background=dark
+let g:solarized_termcolors=256
+colorscheme solarized
+let g:airline_theme='luna'
+"let g:airline_theme='powerlineish'
+
+let g:vim_json_syntax_conceal = 0
+
 autocmd FileType python setlocal ts=4 shiftwidth=4 softtabstop=4 "foldmethod=indent foldlevel=99
 autocmd FileType ruby setlocal ts=2 shiftwidth=2 softtabstop=2 "foldmethod=indent
 autocmd FileType javascript setlocal ts=2 shiftwidth=2 softtabstop=2 "foldmethod=syntax
@@ -94,6 +94,7 @@ autocmd FileType cpp setlocal ts=4 softtabstop=4 "foldmethod=syntax
 autocmd FileType hpp setlocal ts=4 softtabstop=4 "foldmethod=syntax
 autocmd FileType scala setlocal ts=2 shiftwidth=2 softtabstop=2 "foldmethod=indent
 autocmd FileType html setlocal ts=2 shiftwidth=2 softtabstop=2 "foldmethod=indent
+autocmd FileType json setlocal ts=2 shiftwidth=2 softtabstop=2 "foldmethod=indent
 "autocmd FileType python compiler pylint
 
 " Shorcuts for tabs

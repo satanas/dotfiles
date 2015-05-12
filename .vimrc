@@ -75,8 +75,6 @@ set pastetoggle=<F12>  " pastetoggle (sane indentation on pastes)
 set clipboard=unnamed
 
 syntax on
-filetype plugin indent on " Enable filetype-specific indenting and plugins
-
 set background=dark
 let g:solarized_termcolors=256
 colorscheme solarized
@@ -95,7 +93,10 @@ autocmd FileType hpp setlocal ts=4 softtabstop=4 "foldmethod=syntax
 autocmd FileType scala setlocal ts=2 shiftwidth=2 softtabstop=2 "foldmethod=indent
 autocmd FileType html setlocal ts=2 shiftwidth=2 softtabstop=2 "foldmethod=indent
 autocmd FileType json setlocal ts=2 shiftwidth=2 softtabstop=2 "foldmethod=indent
+autocmd FileType coffee setlocal ts=2 shiftwidth=2 softtabstop=2 "foldmethod=indent
 "autocmd FileType python compiler pylint
+
+filetype plugin indent on " Enable filetype-specific indenting and plugins
 
 " Shorcuts for tabs
 :nmap <C-tab> :tabnext

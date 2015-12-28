@@ -31,6 +31,7 @@ Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'scrooloose/syntastic'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'elzr/vim-json'
+Bundle 'mustache/vim-mustache-handlebars'
 
 " Installing plugins the first time
 if iCanHazVundle == 0

@@ -31,6 +31,7 @@ Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'scrooloose/syntastic'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'elzr/vim-json'
+Bundle 'wakatime/vim-wakatime'
 Bundle 'mustache/vim-mustache-handlebars'
 
 " Installing plugins the first time
@@ -84,20 +85,21 @@ let g:airline_theme='luna'
 
 let g:vim_json_syntax_conceal = 0
 
-autocmd FileType python setlocal ts=4 shiftwidth=4 softtabstop=4 "foldmethod=indent foldlevel=99
-autocmd FileType ruby setlocal ts=2 shiftwidth=2 softtabstop=2 "foldmethod=indent
-autocmd FileType javascript setlocal ts=2 shiftwidth=2 softtabstop=2 "foldmethod=syntax
-autocmd FileType css setlocal ts=2 shiftwidth=2 softtabstop=2 "foldmethod=syntax
-autocmd FileType php setlocal ts=4 softtabstop=4 "foldmethod=syntax
-autocmd FileType cpp setlocal ts=4 softtabstop=4 "foldmethod=syntax
-autocmd FileType hpp setlocal ts=4 softtabstop=4 "foldmethod=syntax
-autocmd FileType scala setlocal ts=2 shiftwidth=2 softtabstop=2 "foldmethod=indent
-autocmd FileType html setlocal ts=2 shiftwidth=2 softtabstop=2 "foldmethod=indent
-autocmd FileType json setlocal ts=2 shiftwidth=2 softtabstop=2 "foldmethod=indent
-autocmd FileType coffee setlocal ts=2 shiftwidth=2 softtabstop=2 "foldmethod=indent
-"autocmd FileType python compiler pylint
-
 filetype plugin indent on " Enable filetype-specific indenting and plugins
+
+autocmd FileType python setlocal ts=4 shiftwidth=4 softtabstop=4 "foldmethod=indent foldlevel=99
+autocmd FileType ruby setlocal ts=2 shiftwidth=2 softtabstop=2
+autocmd FileType javascript setlocal ts=2 shiftwidth=2 softtabstop=2
+autocmd FileType css setlocal ts=2 shiftwidth=2 softtabstop=2
+autocmd FileType php setlocal ts=4 softtabstop=4
+autocmd FileType cpp setlocal ts=4 softtabstop=4
+autocmd FileType hpp setlocal ts=4 softtabstop=4
+autocmd FileType scala setlocal ts=2 shiftwidth=2 softtabstop=2
+autocmd FileType html setlocal ts=2 shiftwidth=2 softtabstop=2
+autocmd FileType json setlocal ts=2 shiftwidth=2 softtabstop=2
+autocmd FileType coffee setlocal ts=2 shiftwidth=2 softtabstop=2
+autocmd FileType hbs setlocal ts=2 shiftwidth=2 softtabstop=2
+"autocmd FileType python compiler pylint
 
 " Shorcuts for tabs
 :nmap <C-tab> :tabnext

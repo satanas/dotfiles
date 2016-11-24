@@ -31,7 +31,6 @@ Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'scrooloose/syntastic'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'elzr/vim-json'
-Bundle 'wakatime/vim-wakatime'
 Bundle 'mustache/vim-mustache-handlebars'
 
 " Installing plugins the first time
@@ -98,7 +97,7 @@ autocmd FileType scala setlocal ts=2 shiftwidth=2 softtabstop=2
 autocmd FileType html setlocal ts=2 shiftwidth=2 softtabstop=2
 autocmd FileType json setlocal ts=2 shiftwidth=2 softtabstop=2
 autocmd FileType coffee setlocal ts=2 shiftwidth=2 softtabstop=2
-autocmd FileType hbs setlocal ts=2 shiftwidth=2 softtabstop=2
+autocmd FileType html.handlebars setlocal ts=2 shiftwidth=2 softtabstop=2
 "autocmd FileType python compiler pylint
 
 " Shorcuts for tabs

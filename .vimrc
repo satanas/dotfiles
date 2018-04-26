@@ -15,10 +15,11 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 Bundle 'gmarik/vundle'
+Bundle 'altercation/vim-colors-solarized'
 Bundle 'bling/vim-airline'
+Bundle 'vim-airline/vim-airline-themes'
 Bundle 'scrooloose/nerdtree'
 Bundle 'tpope/vim-rails'
-" Bundle 'orenhe/pylint.vim'
 Bundle 'avakhov/vim-yaml'
 Bundle 'kien/ctrlp.vim'
 Bundle 'YankRing.vim'
@@ -77,10 +78,9 @@ set clipboard=unnamed
 
 syntax on
 set background=dark
-let g:solarized_termcolors=256
 colorscheme solarized
-let g:airline_theme='luna'
-"let g:airline_theme='powerlineish'
+let g:airline_theme='solarized'
+let g:airline_theme_bg='dark'
 
 let g:vim_json_syntax_conceal = 0
 

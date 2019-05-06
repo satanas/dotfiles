@@ -1,7 +1,7 @@
 Vim Configuration Files
 =======================
 
-This is my personal configuration for Vim. It's inspired by [fisa-vim-config](https://github.com/fisadev/fisa-vim-config) but with a less stuffs.
+This is my personal configuration for Vim. It's inspired by [fisa-vim-config](https://github.com/fisadev/fisa-vim-config) but with less stuffs.
 
 Installation
 ============

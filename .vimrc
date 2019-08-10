@@ -61,46 +61,33 @@ map <right> <nop>
 " Clipboard
 set clipboard=unnamed,unnamedplus  " Copy into system (*, +) registers.
 
-let iCanHazVundle=1
-let vundle_readme=expand('~/.vim/bundle/vundle/README.md')
-if !filereadable(vundle_readme)
-    echo "Installing Vundle..."
-    echo ""
-    silent !mkdir -p ~/.vim/bundle
-    silent !git clone https://github.com/gmarik/vundle ~/.vim/bundle/vundle
-    let iCanHazVundle=0
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-
-Bundle 'gmarik/vundle'
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'bling/vim-airline'
-Bundle 'vim-airline/vim-airline-themes'
-Bundle 'scrooloose/nerdtree'
-Bundle 'tpope/vim-rails'
-Bundle 'avakhov/vim-yaml'
-Bundle 'kien/ctrlp.vim'
-Bundle 'YankRing.vim'
-Bundle 'AutoComplPop'
-Bundle 'satanas/rename.vim'
-Bundle 'derekwyatt/vim-scala'
-Bundle 'jelera/vim-javascript-syntax'
-Bundle 'pangloss/vim-javascript'
-Bundle 'nathanaelkane/vim-indent-guides'
-Bundle 'scrooloose/syntastic'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'elzr/vim-json'
-Bundle 'mustache/vim-mustache-handlebars'
-" Bundle 'JamshedVesuna/vim-markdown-preview'
-
-" Installing plugins the first time
-if iCanHazVundle == 0
-    echo "Installing Bundles, please ignore key map error messages"
-    echo ""
-    :BundleInstall
-endif
+call plug#begin('~/.vim/bundle')
+Plug 'altercation/vim-colors-solarized'
+Plug 'bling/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'scrooloose/nerdtree'
+Plug 'tpope/vim-rails'
+Plug 'avakhov/vim-yaml'
+Plug 'kien/ctrlp.vim'
+Plug 'vim-scripts/YankRing.vim'
+Plug 'vim-scripts/AutoComplPop'
+Plug 'satanas/rename.vim'
+Plug 'derekwyatt/vim-scala'
+Plug 'jelera/vim-javascript-syntax'
+Plug 'pangloss/vim-javascript'
+Plug 'nathanaelkane/vim-indent-guides'
+Plug 'scrooloose/syntastic'
+Plug 'kchmck/vim-coffee-script'
+Plug 'elzr/vim-json'
+Plug 'mustache/vim-mustache-handlebars'
+" Plug 'JamshedVesuna/vim-markdown-preview'
+call plug#end()
 
 set background=dark
 colorscheme solarized

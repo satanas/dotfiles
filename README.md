@@ -17,6 +17,6 @@ ln -s my_project_folder/.vimrc ~/.vimrc
 
 After that open vim and it should install all your plugins automatically. If that doesn't happen, just execute:
 ```
-:PluginInstall!
+:PlugInstall!
 ```
 

@@ -32,7 +32,6 @@ set softtabstop=4               " Number of spaces tab is counted during edition
 set pastetoggle=<F12>           " pastetoggle (sane indentation on pastes)
 
 " UI/Interface ---------------------- {{{
-set foldmethod=indent           " Indentation-based folding.
 set laststatus=2                " Always show status bar
 set wildmenu                    " Enable enhanced tab autocomplete.
 set wildmode=list:longest,full  " Complete till longest string, then open menu.

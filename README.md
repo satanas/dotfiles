@@ -1,22 +1,32 @@
-Vim Configuration Files
-=======================
+# Dot Files
 
-This is my personal configuration for Vim.
+This repository serves as my way to help me setup and maintain my configuration files. It takes the effort out of
+installing everything manually. Feel free to explore, learn and copy parts for your own dotfiles. Enjoy!
 
-Installation
-============
+# What's included?
 
-To install it you can copy the files to your `.vim` folder or just symlink them from the git repo (preferred):
+## OhMyZsh
 
+OhMyZsh configured with my preferences and my own theme `Hostyle`.
+
+## Vim
+
+Vim configured with all my plugins, airline and `solarized` theme.
+
+## Homebrew
+
+Homebrew formulas and casks installed and backed up in a bundle `Brewfile`.
+
+# Installation
+
+Clone the repo:
 ```
-git clone git://github.com/satanas/vim-config.git my_project_folder
-mkdir ~/.vim
-ln -s my_project_folder/.vim/colors ~/.vim/colors
-ln -s my_project_folder/.vimrc ~/.vimrc
+git clone git://github.com/satanas/dot-files.git ~/projects
 ```
 
-After that open vim and it should install all your plugins automatically. If that doesn't happen, just execute:
+Execute the installation script:
 ```
-:PlugInstall!
+cd ~/projects/dot-files
+zsh scripts/install.sh
 ```
 

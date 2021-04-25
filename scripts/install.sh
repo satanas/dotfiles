@@ -6,8 +6,6 @@ YELLOW="\033[1;33m"
 CYAN="\033[1;36m"
 NC="\033[0m" # No Color
 
-chsh -s /bin/zsh
-
 link_file() {
   echo "Linking ${2}";
   ln -sf ${CONFIG_FILES_FULL_PATH}/${1} ${2}

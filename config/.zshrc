@@ -31,5 +31,5 @@ compinit
 
 #[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 
-
-
+source /usr/local/share/chruby/chruby.sh
+source /usr/local/share/chruby/auto.sh

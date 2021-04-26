@@ -57,12 +57,14 @@ fi
 title "Linking config files..."
 create_dir ~/.vim/colors
 create_dir ~/.oh-my-zsh/themes
+create_dir ~/.bundle
 
 link_file themes/solarized.vim ~/.vim/colors/solarized.vim
 link_file .vimrc ~/.vimrc
 link_file .zshrc ~/.zshrc
 link_file themes/hostyle.zsh-theme ~/.oh-my-zsh/themes/hostyle.zsh-theme
 link_file Brewfile ~/Brewfile
+link_file bundle-config ~/.bundle/config
 
 title "Setting up Homebrew..."
 check_deps brew

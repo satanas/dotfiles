@@ -5,28 +5,34 @@ installing everything manually. Feel free to explore, learn and copy parts for y
 
 # What's included?
 
-## OhMyZsh
+* OhMyZsh configured with my preferences and my own theme `Hostyle`.
+* Vim configured with all my plugins, airline and `solarized` theme.
+* Homebrew formulas and apps installed via `Brewfile`.
+* Karabiner setup
+* Git config
+* Docker config
+* Bundler config
+* AWS CLI config
 
-OhMyZsh configured with my preferences and my own theme `Hostyle`.
-
-## Vim
-
-Vim configured with all my plugins, airline and `solarized` theme.
-
-## Homebrew
-
-Homebrew formulas and casks installed and backed up in a bundle `Brewfile`.
+## Using GNU Stow
+> GNU Stow is a symlink farm manager which takes distinct sets of software and/or data located in separate directories on the filesystem, and makes them all appear to be installed in a single directory tree.
 
 # Installation
 
-Clone the repo:
+## First time setup:
 ```
-git clone git://github.com/satanas/dot-files.git ~/projects
-```
-
-Execute the installation script:
-```
-cd ~/projects/dot-files
-zsh scripts/install.sh
+$ bash -c "$(curl -fsSL https://raw.githubusercontent.com/satanas/dotfiles/master/install.sh)"
 ```
 
+## Re-execute once everything is installed
+```
+cd ~/projects/dotfiles
+./install.sh
+```
+
+
+## References
+* https://github.com/cchacin/dotfiles
+* https://github.com/webpro/dotfiles
+* https://github.com/driesvints/dotfiles
+* https://brandon.invergo.net/news/2012-05-26-using-gnu-stow-to-manage-your-dotfiles.html

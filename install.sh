@@ -63,13 +63,13 @@ BREWFILE=${DOTFILES}/config/Brewfile
 title "Installing applications from ${BREWFILE}"
 brew bundle --file=${BREWFILE}
 
-cd ${DOTFILES}
+cd ${DOTFILES}/config
 
 title "Linking dotfiles"
 for filename in $(ls config);
 do
   if [ -d "${filename}" ]; then
-    stow -R ${filename}
+    stow -R ${filename} -t ~
     echo "✓ Linked ${filename}"
   fi
 done;

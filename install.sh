@@ -64,6 +64,9 @@ BREWFILE=${DOTFILES}/config/Brewfile
 title "Installing applications from ${BREWFILE}"
 brew bundle --file=${BREWFILE}
 
+# Removes .zshrc from $HOME (if it exists)
+rm -rf ~/.zshrc
+
 cd ${DOTFILES}/config
 
 title "Linking dotfiles"

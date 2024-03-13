@@ -21,7 +21,7 @@ installing everything manually. Feel free to explore, learn and copy parts for y
 
 ## First time setup:
 ```
-$ bash -c "$(curl -fsSL https://raw.githubusercontent.com/satanas/dotfiles/master/install.sh)"
+sh -c "$(curl -H 'Cache-Control: no-cache' -fsSL https://raw.githubusercontent.com/satanas/dotfiles/master/install.sh)"
 ```
 
 ## Re-execute once everything is installed

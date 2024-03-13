@@ -1,7 +1,5 @@
 tap "aws/tap"
 tap "homebrew/bundle"
-tap "homebrew/cask"
-tap "homebrew/core"
 brew "autojump"
 brew "advancecomp"
 brew "awscli"

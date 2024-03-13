@@ -23,6 +23,7 @@ ok() {
     echo "${GREEN}$1${NO_FORMAT}"
 }
 
+SOURCE_DIR=$(pwd)
 
 title "Setting up Oh My Zsh"
 # Check for Oh My Zsh and install if we don't have it
@@ -66,7 +67,7 @@ brew bundle --file=${BREWFILE}
 cd ${DOTFILES}/config
 
 title "Linking dotfiles"
-for filename in $(ls config);
+for filename in $(ls .);
 do
   if [ -d "${filename}" ]; then
     stow -R ${filename} -t ~
@@ -74,6 +75,8 @@ do
   fi
 done;
 
-title "Sourcing the new ~/.zshrc"
-source ~/.zshrc
 echo "${CYAN}Configuration completed successfully!${NO_FORMAT}"
+title "Switching to zsh"
+cd $SOURCE_DIR
+exec zsh
+source ~/.zshrc

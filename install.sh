@@ -27,7 +27,7 @@ title "Setting up Oh My Zsh"
 # Check for Oh My Zsh and install if we don't have it
 if [[ ! -d ~/.oh-my-zsh ]]; then
     echo "Installing Oh My Zsh"
-    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh || { error "✗ Unable to install Oh My Zsh."; exit 1; }
     ok "✓ OyMyZsh installed."
 else
     ok "✓ OyMyZsh already installed."

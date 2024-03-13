@@ -73,7 +73,7 @@ title "Linking dotfiles"
 for filename in $(ls .);
 do
   if [ -d "${filename}" ]; then
-    stow -R ${filename} -t ~
+    stow -R ${filename} -t ~ 2> >(grep -v 'BUG in find_stowed_path? Absolute/relative mismatch' 1>&2)
     echo "✓ Linked ${filename}"
   fi
 done;

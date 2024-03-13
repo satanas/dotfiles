@@ -52,7 +52,7 @@ if [ -d "${DOTFILES}" ]; then
   ok "✓ Dotfiles updated"
 else
   echo "Cloning dotfiles repo..."
-  git clone https://github.com/satanas/dotfiles.git
+  git clone https://github.com/satanas/dotfiles.git ${DOTFILES}
   cd ${DOTFILES}
   ok "✓ Dotfiles installed"
 fi

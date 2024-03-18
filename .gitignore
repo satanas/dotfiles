@@ -1,5 +1,7 @@
 *.swp
-config/.vim/bundle/*
-config/.vim/doc/*
+config/vim/.vim/bundle/*
+config/vim/.vim/autoload/*
+config/vim/.vim/doc/*
+config/Brewfile.lock.json
 *.DS_Store
 .idea/*

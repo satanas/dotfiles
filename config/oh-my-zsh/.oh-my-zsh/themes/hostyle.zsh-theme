@@ -1,4 +1,5 @@
 function git_info_wrapper() {
+  vcs_info
   if $(git rev-parse --is-inside-work-tree >/dev/null 2>&1); then
     echo " %B%{$fg[red]%}±%{$reset_color%}%b $(git_sha) $(git_prompt_info)"
   else

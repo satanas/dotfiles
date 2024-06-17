@@ -7,6 +7,12 @@ ZSH_THEME="hostyle"
 
 plugins=(git autojump)
 
+autoload -U select-word-style
+autoload -Uz vcs_info
+setopt prompt_subst
+
+select-word-style bash
+
 source $ZSH/oh-my-zsh.sh
 
 alias zshconfig="vim ~/.zshrc"

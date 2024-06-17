@@ -30,6 +30,10 @@ cd ~/projects/dotfiles
 ./install.sh
 ```
 
+# Fix shortcut conflicts
+
+* https://intellij-support.jetbrains.com/hc/en-us/articles/360005137400-Cmd-Shift-A-hotkey-opens-Terminal-with-apropos-search-instead-of-the-Find-Action-dialog
+
 
 ## References
 * https://github.com/cchacin/dotfiles

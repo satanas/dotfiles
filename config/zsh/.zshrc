@@ -13,6 +13,9 @@ setopt prompt_subst
 
 select-word-style bash
 
+# To fix the issue with the git prompt https://github.com/ohmyzsh/ohmyzsh/issues/12328
+zstyle ':omz:alpha:lib:git' async-prompt no
+
 source $ZSH/oh-my-zsh.sh
 
 alias zshconfig="vim ~/.zshrc"

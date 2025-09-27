@@ -3,5 +3,11 @@ config/vim/.vim/bundle/*
 config/vim/.vim/autoload/*
 config/vim/.vim/doc/*
 config/Brewfile.lock.json
+config/bundle/.bundle/cache/*
+config/docker/.docker/buildx/
+config/docker/.docker/cli-plugins/
+config/docker/.docker/contexts/
+config/docker/.docker/desktop-build/
+config/docker/.docker/mutagen/
 *.DS_Store
 .idea/*
